@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Report</title>
+  <style>
+    body{
+      font-weight: 400;
+      color: #346410;
+    }
+    a{
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #133131;
+    }
+    .top-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+    }
+
+    .libs{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+    }
+
+    .marking-layout{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+
+    .top-bar>div{
+      background: #eee;
+      padding: 1em;
+    }
+
+    .sidebar{
+      background: #eee;
+      padding: 1em;
+      text-align: center;
+    }
+
+    .content{
+      background: #ddd;
+      padding: 1em;
+    }
+
+    .top-bar>div:nth-child(odd) {
+      background: #ddd;
+    }
+
+    .nav, a {
+      text-align: center;
+      font-weight: 800;
+      color: #346410;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="nav"><img src="assets/logo.png" alt=""></div>
+    <div class="nav"><br><a href="#inf">Information page</a></div>
+    <div class="nav"><br><a href="#lib">3-rd party libraries</a></div>
+    <div class="nav"><br><a href="#crit">Marking citeria</a></div>
+  </div>
+  <br>
+  <div class="container">
+    <div id="inf" class="content">
+      <h1>Banks - Game Website</h1>
+      <h3>Author: Szymon Klimek</h3>
+      <h3>Middlesex University London <br>Student number: M00644986</h3>
+      <br>
+      <h3>Short info</h3>
+      <p>Game based on top view shooter type game. The aim is to shoot as many ballons as possible. There is no time limit. The points are granted one for each accurate shoot. The map grid is x= 0-400pt y= 0-300pt. To drop a bomb type command x:y and hit the button Drop. The bomb will smash the ballons at possition x:y and grant you the score. </p>
+      <p><b>annotation: center point of a object bomb is not defined, so the top left corner is treated as default</b></p>
+      <h3>Features list</h3>
+      <ul>
+        <li>Random generated unique maps and balloons colors are random</li>
+        <li>Explosion sprite type animation</li>
+        <li>Interactive gui</li>
+        <li>Real time scoring system with JSON</li>
+        <li>Scalable game code</li>
+        <li>Mobile friendly game with canvas objects</li>
+        <li>Bespoke design</li>
+        <li>Most recent game development techniques with Ticker for sprite animations and elements rendering</li>
+        <li>Game under 100 lines of code!</li>
+      </ul>
+      <br>
+      <br>
+      <h3>Code editors:</h3>
+      <ul>
+        <li>WebStorm</li>
+        <li>PhpStorm</li>
+        <li>Atom</li>
+      </ul>
+    </div>
+    <div class="sidebar"><h1>Website views</h1>
+      <p>index.php - homepage</p>
+      <img src="assets/home.png" alt="" width="700px"> <br>
+      <p>profile.php - login / register and rules</p>
+      <img src="assets/profile.png" alt="" width="700px"> <br>
+      <p>game.php - game window and stats</p>
+      <img src="assets/game.png" alt="" width="700px"> <br>
+      <p>leaderboard.php - ranking page</p>
+      <img src="assets/leaderboard.png" alt="" width="700px"> <br>
+
+    </div>
+  </div>
+  <br><br>
+  <h1 id="lib" style="text-align: center;">3-rd party libraries</h1>
+  <div class="libs">
+    <div class="sidebar">
+      <img src="assets/bootstrap4.jpg" alt="" width="300px">
+      <a href="https://getbootstrap.com/">Link</a>
+    </div>
+    <div class="div">Bootstrap, the world’s most popular framework for building responsive, mobile-first sites.
+      <br><br>Used for:
+      <ul>
+        <li>Responsivnes</li>
+        <li>Ready styled elements and classes</li>
+        <li>Grid layout</li>
+      </ul>
+      <p>JS library implemented in common.php line number 117</p>
+      <p>CSS library implemented in common.php line number 16</p>
+      <p>Bootstrap 4 classes are widely used on all pages in website</p>
+    </div>
+    <div class="sidebar">
+      <img src="assets/jquery.png" alt="" width="300px">
+      <a href="https://jquery.com/">Link</a>
+    </div>
+    <div class="div">
+      jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+      <br><br>Used for:
+      <ul>
+        <li>Game purpose</li>
+        <li>Easy scrolling</li>
+        <li>Javascript base library</li>
+      </ul>
+      <p>JS library implemented in common.php line number 114</p>
+    </div>
+    <div class="sidebar">
+      <img src="assets/create.jpg" alt="" width="300px">
+      <a href="https://createjs.com/">Link</a>
+    </div>
+    <div class="div">A suite of modular libraries and tools which work together or independently to enable rich interactive content on open web technologies via HTML5.
+      <br><br>Used for:
+      <ul>
+        <li>Manipulation canvas with java script</li>
+        <li>Manipulating html elements and objects on the canvas</li>
+        <li>Advanced animation effects</li>
+        <li>Light weight of library is a plus</li>
+        <li>Animation displayed in 60FPS</li>
+        <li>Game canvas windows is supported by all devices and browsers</li>
+      </ul>
+      <p>JS library implemented in common.php line number 121,122</p>
+      <p>Create JS functions can be find in js/game-engine.js file</p>
+      <p><b>Major function of CREATEJS in my game project:</b><br>
+        createjs.Ticker.on("tick", handleTick);<br>
+        function handleTick(event)<br>
+        createjs.Bitmap<br>
+        createjs.Shape<br>
+        createjs.Text<br>
+        shape.graphics.beginFill(createjs.Graphics.getHSL(Math.random()*360,100,50)).drawCircle(0,0,30);<br>
+        holder = stage.addChild(new createjs.Container());<br></p>
+    </div>
+
+  </div>
+  <h1 id="crit" style="text-align: center;">Marking criteria Game</h1>
+  <div class="marking-layout">
+      <div class="criteriahtml">
+        <h3>a basic game that the user can play and obtain a score.</h3>
+      </div>
+      <div class="criteriahtml">
+       <ul>
+         <l><a href="https://youtu.be/7kUqN25-Yh8">Video showing gameplay</a> </l>
+       </ul>
+      </div>
+
+      <div class="citeriahtml">
+        <h3>advanced JavaScript such as objects and arrays.</h3>
+      </div>
+      <div class="citeriahtml">
+
+        <ul>
+          <li>Game is object oriented with randomly generated balloons with randomy generated colors. </li>
+          <li>I added objects to game canvas by function: stage.addChild(objectName)</li>
+          <li>objects have their x and y values: shape.x shape.y which indicate position on the canvas, and other properties such as object.opacity</li>
+
+        </ul>
+      </div>
+      <div class="citeriahtml">
+        <h3>advanced game features, such as graphics, animation, multiple skill levels.</h3>
+      </div>
+      <div class="citeriahtml">
+        <ul>
+          <li>Advanced techniques:</li>
+          <li>Sprite animation using JSON which tell us about png image: it's frame size, frame jump width, gives us ability to animate within defined frames</li>
+          <li>file js/game-engine.js line 17 </li>
+          <li>{"images": ["Smoke.png"], "animations": {"kaboom": [10, 19], "boom": [0, 9]}, "frames": {"height": 94, "regX": 0, "count": 20, "regY": 0, "width": 96}};</li>
+          <img src="Smoke.png" width="600px">
+          <li>Game related Create JS features such as: Ticker, handleTick(event), SpriteSheet, Stage</li>
+        </ul>
+      </div>
+  </div>
+  <h1 style="text-align: center;">Marking criteria User account</h1>
+  <div class="marking-layout">
+      <div class="criteriacss">
+        <h3>User login and register with with JavaScript validation and error message.</h3>
+      </div>
+      <div class="criteriahtml">
+        <ul>
+          <li><a href="https://youtu.be/t0RJjrG_czU">Video showing the user login and register process</a> .</li>
+        </ul>
+      </div>
+    <div class="criteriacss">
+        <h3>Store user data in local storage in JSON format (no mark for database storage).</h3>
+
+      </div>
+      <div class="criteriahtml">
+        <ul>
+          <li>the location of the JSON storage code.</li>
+          <li>file js/sign-up-mdx.js</li>
+          <li>function storeUser()  and  function login()</li>
+          <li>New user data is stored in local storage, logged user email is stored in session storage</li>
+        </ul>
+      </div>
+  </div>
+
+  <h1 style="text-align: center;">Marking criteria Ranking table</h1>
+  <div class="marking-layout">
+      <div class="criteriaphp">
+        <h3>Storage of users scores in JSON format using HTML local storage (no mark for database storage).</h3>
+      </div>
+      <div class="criteriaphp">
+
+        <ul>
+          <li>the location of the JSON storage code</li>
+          <li>file js/sign-up-mdx.js</li>
+          <li>function storeUser()  and  function login()</li>
+          <li>used local storage for each created user and session storage for logged user</li>
+        </ul>
+      </div>
+
+      <div class="citeriaphp">
+        <h3>Automatically updates as new user and score are added.</h3>
+      </div>
+      <div class="citeriaphp">
+        <ul>
+          <li>video showing the ranking table update <a href="https://youtu.be/qryogM85BDU">YouTube link to video</a> </li>
+          <li>file js/sign-up-mdx.js line 61</li>
+          <li>function printRanking()</li>
+
+        </ul>
+      </div>
+    <div class="citeriaphp">
+        <h3>Sort by the score from high to low. </h3>
+      </div>
+      <div class="citeriaphp">
+        <ul>
+          <li>file js/sign-up-mdx.js line 61</li>
+          <p>function printRanking()</p>
+          <p>cruicial line: .sort((a, b) => b.score - a.score)</p>
+
+        </ul>
+      </div>
+  </div>
+
+</body>
+
+</html>

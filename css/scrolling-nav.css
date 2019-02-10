@@ -1,0 +1,32 @@
+/*navigation bar styles*/
+
+.nav-link{
+    font-size: 28px;
+    color: #326504;
+}
+
+/* style for nav when it's active */
+.active {
+    background:#326504;
+    color:#dee4db;
+    /* shaddow on active menu item */
+    -webkit-box-shadow: 10px 10px 22px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px -9px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px -9px rgba(0,0,0,0.75);
+}
+
+.navbar{
+    background-color: #dee4db;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+
+/* leaderboard: scrolling styles - make it scrollable if there are plenty of records */
+.table-wrapper-scroll-y {
+    display: block;
+    max-height: 520px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
