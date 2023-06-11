@@ -7,7 +7,7 @@ outputHeader("My Game Website - Home");
 outputNavigation("Home");
 ?>
 
-<!--  Home container -->
+<!--  Home container test -->
 <div class="section-home mypattern">
     <section>
         <div class="row text-center">
